@@ -1,0 +1,6 @@
+{
+  "name": "DocuChat RAG - Chat with Your PDFs",
+  "description": "High-performance RAG chatbot for research papers, books, and notes with vector retrieval and citation inspection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

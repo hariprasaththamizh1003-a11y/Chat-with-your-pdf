@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .bg-stax-canvas {
+    background-color: #0b0d19;
+  }
+
+  .stax-glass-card {
+    background: rgba(19, 22, 43, 0.78);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .stax-glass-card-hover {
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .stax-glass-card-hover:hover {
+    background: rgba(24, 28, 54, 0.88);
+    border-color: rgba(99, 102, 241, 0.35);
+    box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+  }
+
+  .stax-glass-input {
+    background: rgba(15, 18, 35, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .stax-glass-pill {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .stax-active-nav {
+    background: rgba(99, 102, 241, 0.15);
+    border: 1px solid rgba(129, 140, 248, 0.35);
+    box-shadow: 0 4px 20px -2px rgba(99, 102, 241, 0.25);
+  }
+
+  .stax-text-gradient {
+    background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .stax-glow-cyan {
+    box-shadow: 0 0 25px -5px rgba(56, 189, 248, 0.35);
+  }
+
+  .stax-glow-purple {
+    box-shadow: 0 0 25px -5px rgba(168, 85, 247, 0.35);
+  }
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(11, 13, 25, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.45);
+}
